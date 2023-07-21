@@ -1,5 +1,4 @@
 import React from 'react'
-
 function Objects() {
  
     const zuko = {
@@ -7,6 +6,8 @@ function Objects() {
         age: 3,
         email: 'abc@123.com'
     }
+    const {firstName, age, email} = zuko;
+    zuko.firstName = 'Azula' //mutating my object
 
     return Object.keys(zuko).map((key, index)=> {
         return (
